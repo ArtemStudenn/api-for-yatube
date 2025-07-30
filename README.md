@@ -46,30 +46,46 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-### Как запустить проект:
+### Примеры запросов:
 
 Получение токена для аутентификации:
+```
 POST api/v1/jwt/create/
+```
+```
 {
   "username": "username",
   "password": "password"
 }
+```
 
 Публикация поста:
+```
 POST /api/v1/posts/
+```
+```
 {
   "text": "Текст поста",
   "group": 1
 }
+```
 
 Публикация комментария:
+```
 POST api/v1/posts/{post_id}/comments/
+```
+```
 {
   "text": "Текст комментария"
 }
+```
 
 Подписка на пользователя:
+```
 POST api/v1/follow/
+```
+```
 {
   "following": "username автора"
 }
+```
