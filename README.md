@@ -1,48 +1,34 @@
 # API для Yatube
 
-API для использования возможностей блога
+API для использования возможностей блога с возможностью публикации текстовых постов, их комментирования и подписки на любимых авторов - Yatube.
 
-### Описание:
+---
 
-Yatube - блог с возможностью публикации текстовых постов, их комментирования и подписки на любимых авторов.
+## Технологический стек
 
-### Как запустить проект:
+- Python
+- Django
+- Django REST Framework
+- SimpleJWT
 
-Клонировать репозиторий и перейти в него в командной строке.
+---
 
-```
-git clone https://github.com/ArtemStudenn/api-final-yatube
-```
-
-```
-cd api-final-yatube
-```
-
-Cоздать и активировать виртуальное окружение:
+## Запуск проекта
 
 ```
+git clone https://github.com/ArtemStudenn/api-for-yatube
+
+cd api-for-yatube/
+
 python -m venv venv
-```
 
-```
-source venv/Scripts/activate
-```
+source venv/Scripts/activate  # Windows
+source venv/bin/activate  # MacOS/Linux
 
-Установить зависимости из файла requirements.txt:
-
-```
 pip install -r requirements.txt
-```
 
-Выполнить миграции:
-
-```
 python manage.py migrate
-```
 
-Запустить проект:
-
-```
 python manage.py runserver
 ```
 
@@ -89,3 +75,11 @@ POST api/v1/follow/
   "following": "username автора"
 }
 ```
+
+### Подробная документация с примерами: [http://127.0.0.1:8000/redoc/](http://127.0.0.1:8000/redoc/)
+
+---
+
+## Автор
+
+[Студенников Артем](https://github.com/ArtemStudenn)
