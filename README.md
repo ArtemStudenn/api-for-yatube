@@ -10,6 +10,7 @@ API для использования возможностей блога с в�
 - Django
 - Django REST Framework
 - SimpleJWT
+- SQLite
 
 ---
 
